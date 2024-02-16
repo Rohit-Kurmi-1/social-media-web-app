@@ -1,0 +1,24 @@
+#emojiModal {
+    padding: 12px;
+    background: black;
+    max-width: 500px;
+
+    .masonry-grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        grid-gap: 16px;
+    }
+
+    .emoji {
+        cursor: pointer;
+        margin-bottom: 2px;
+        font-size: 22px;
+    }
+
+    @media screen and (max-width:667px) {
+        & {
+            width: 90vw;
+        }
+    }
+}

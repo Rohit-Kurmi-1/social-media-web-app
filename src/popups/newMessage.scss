@@ -1,0 +1,35 @@
+#newMessage {
+    width: 500px;
+    height: 600px;
+    .peopleSearch {
+        padding: 6px;
+
+        input {
+            border: none;
+            outline: none;
+            background: transparent;
+            padding-left: 8px;
+            color: white;
+        }
+    }
+
+    .makeAGroup{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+        &:hover{
+            background: rgba(80, 80, 80, 0.153);
+        }
+        .icon-container {
+            width: 40px;
+            height: 40px;
+            border: 1px solid white;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+        }
+    }
+
+   
+}

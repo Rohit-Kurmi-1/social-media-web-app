@@ -1,0 +1,13 @@
+@import '../vars/color.scss';
+
+#homepage {
+    border-left: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+
+    header {
+        z-index: 7;
+        border-bottom: 2px solid $extra-light-gray;
+        position: sticky;
+        top: 0;
+    }
+}

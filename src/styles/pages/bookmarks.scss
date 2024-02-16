@@ -1,0 +1,12 @@
+#bookmarks {
+    border-right: 1px solid $light-gray;
+    border-left: 1px solid $light-gray;
+
+    .header {
+        position: sticky;
+        top: 0;
+        background: #0f0f0f;
+        backdrop-filter: blur(2px);
+        z-index: 3;
+    }
+}

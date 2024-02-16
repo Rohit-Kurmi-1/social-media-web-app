@@ -1,0 +1,46 @@
+#modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 15, 15, 0.577);
+    backdrop-filter: blur(1px);
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    z-index: 500;
+
+    main {
+        overflow: hidden;
+        position: relative;
+        background: white;
+        border-radius: 16px;
+        animation: animateModal .3s ease;
+
+        .close-icon {
+            position: absolute;
+            top: 12px;
+
+            &.left {
+                left: 12px;
+            }
+
+            &.right {
+                right: 12px;
+            }
+
+
+        }
+    }
+
+    @keyframes animateModal {
+        0% {
+            scale: 0;
+        }
+
+        100% {
+            scale: 1;
+        }
+    }
+}

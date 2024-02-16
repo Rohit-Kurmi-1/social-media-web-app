@@ -1,0 +1,26 @@
+@import '../vars/color.scss';
+
+#rightSideBar {
+    position: relative;
+
+    .header {
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+
+    .user-suggetion {
+        background: #000f1a;
+        border-radius: 6px;
+    }
+
+    @media screen and (max-width:992px) {
+        & {
+            display: none;
+        }
+    }
+}

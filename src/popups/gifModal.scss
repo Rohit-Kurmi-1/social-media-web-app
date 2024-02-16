@@ -1,0 +1,30 @@
+#gifModal {
+    padding: 12px;
+    background: black;
+    max-width: 500px;
+
+    .masonry-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        row-gap: 16px;
+    }
+
+    .masonry-item {
+        margin-bottom: 2px;
+    }
+
+    .masonry-item img {
+        max-width: 100px;
+        display: block;
+        border-radius: 8px;
+        /* Optional: Add rounded corners */
+    }
+
+    @media screen and (max-width:667px) {
+        & {
+            width: 96vw;
+        }
+    }
+}

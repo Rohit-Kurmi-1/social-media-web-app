@@ -1,0 +1,52 @@
+#errorPage {
+    width: 100vw;
+    height: 100vh;
+
+    .dropLetter {
+        position: absolute;
+        transform: rotate(132deg);
+        right: -30px;
+        top: 15px;
+        animation: dropEffect 3s ease-in-out;
+    }
+
+    @keyframes dropEffect {
+        0% {
+            transform: rotate(0);
+            top: 0;
+            right: -25px;
+        }
+
+        30% {
+            transform: rotate(0);
+            top: 0;
+            right: -25px;
+        }
+
+        50% {
+            transform: rotate(165deg);
+            top: 15px;
+            right: -30px;
+        }
+
+        60% {
+            transform: rotate(105deg);
+        }
+
+        70% {
+            transform: rotate(145deg);
+        }
+
+        80% {
+            transform: rotate(120deg);
+        }
+
+        90% {
+            transform: rotate(135deg);
+        }
+
+        100% {
+            transform: rotate(132deg);
+        }
+    }
+}

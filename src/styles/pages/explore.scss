@@ -1,0 +1,90 @@
+#explore {
+    border-right: 1px solid $light-gray;
+    border-left: 1px solid $light-gray;
+
+    .header {
+        position: sticky;
+        top: 0;
+        background: #0f0f0f;
+        backdrop-filter: blur(2px);
+        z-index: 3;
+        border-bottom: 1px solid $light-gray;
+    }
+
+    .searchbar-container {
+        position: sticky;
+        top: 51.5px;
+        background: #0f0f0f;
+        backdrop-filter: blur(2px);
+        padding: 24px;
+        transform: all ease 0.3s;
+    }
+
+
+
+    #searchbar {
+        position: sticky;
+        top: 70px;
+        z-index: 60;
+    }
+
+    main {
+        display: grid;
+        place-content: center;
+
+        div {
+            margin-top: 25%;
+        }
+    }
+
+    .users {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .user {
+            padding: 6px 12px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all ease 0.3s;
+            border-radius: 8px;
+
+            .profile-container {
+                border-radius: 50%;
+                overflow: hidden;
+                display: grid;
+                place-content: center;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+
+            .content {
+                width: 80%;
+                padding: 0 16px;
+            }
+
+            &:hover {
+                background: #00000010;
+                scale: 0.97;
+            }
+
+            &:active {
+                scale: 0.99;
+            }
+        }
+    }
+
+    @media screen and (max-width:667px) {
+        & {
+            .empty-users {
+                text-align: center;
+                margin: 50% 0;
+            }
+        }
+    }
+}

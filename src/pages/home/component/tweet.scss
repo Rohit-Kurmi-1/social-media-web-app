@@ -1,0 +1,46 @@
+#tweetSection {
+    border-bottom: 1px solid rgba(41, 40, 40, 0.395);
+    position: relative;
+
+    .profile-container {
+        border-radius: 50%;
+        overflow: hidden;
+        display: grid;
+        place-content: center;
+
+        img {
+            width: 55px;
+            height: 50px;
+        }
+    }
+
+    .comment-input {
+        color: rgb(238, 231, 231);
+        outline: none;
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        resize: none;
+        overflow-y: hidden;
+        max-height: 250px;
+    }
+
+    .tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .text-count {
+        color: red;
+        width: 30px;
+        height: 30px;
+        border: 2px solid red;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+    }
+}

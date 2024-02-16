@@ -1,0 +1,69 @@
+#profile {
+    border-left: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+
+    #herosection>.header {
+        z-index: 600;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        background: rgba(24, 24, 24, 0.753);
+        backdrop-filter: blur(2px);
+    }
+
+    .linkField {
+        i {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .hero-section {
+        position: relative;
+
+        .banner-container {
+            overflow: hidden;
+            object-fit: fill;
+            width: 100%;
+            position: relative;
+        }
+
+        .profile-container {
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+            display: grid;
+            place-content: center;
+            position: absolute;
+            border: 5px solid rgb(255, 255, 255);
+            background: white;
+
+
+        }
+
+        .userImage {
+            width: 110px;
+            height: 110px;
+        }
+    }
+
+    .stepper {
+        position: sticky;
+        top: 0;
+        border-bottom: 2px solid $extra-light-gray;
+        z-index: 6;
+    }
+
+    @media screen and (max-width:767px) {
+        .profile-container {
+
+            .userImage {
+                width: 70px !important;
+                height: 70px !important;
+            }
+        }
+    }
+}

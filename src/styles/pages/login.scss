@@ -1,0 +1,30 @@
+#loginPage {
+    margin: 0 auto;
+    margin-top: 60px;
+
+    .google-sso {
+        border: 1px solid $light-gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+            scale: 1.02;
+            border-color: $dark-gray;
+        }
+
+        &:active {
+            scale: 1;
+        }
+    }
+
+    @media screen and (max-width:992px) {
+        & {
+            padding: 0 24px;
+        }
+    }
+}

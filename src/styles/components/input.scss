@@ -1,0 +1,38 @@
+#input {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    i {
+        position: absolute;
+
+        &:nth-child(0) {
+            right: 8px;
+        }
+
+        &:nth-child(1) {
+            left: 8px;
+        }
+    }
+
+    input {
+        outline: none;
+        width: 100%;
+        border: 1px solid rgb(164, 156, 156);
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        color: rgb(0, 0, 0);
+        background: rgb(245, 241, 241);
+
+        &:hover {
+            border: 1px solid rgba(0, 0, 0, 0.762);
+        }
+
+        &:focus-within {
+            box-shadow: 0 0 2px 1px $primary;
+            border-color: $primary;
+        }
+    }
+}

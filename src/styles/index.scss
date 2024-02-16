@@ -1,0 +1,115 @@
+@import './components/index.scss';
+@import './pages/index.scss';
+@import './vars/index.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    background: #0f0f0f;
+    color: white;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.font-inter {
+    font-family: 'Inter', serif;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.vr {
+    width: 1px;
+    border-right: 2px solid rgb(255, 255, 255);
+    height: 100%;
+}
+
+.hr {
+    border-bottom: 1px solid #d5dada6e;
+}
+
+.hr-light {
+    border-bottom: 2px solid #1a1b1b73;
+}
+
+.hr-dark {
+    border-bottom: 2px solid #9a979781;
+}
+
+.like {
+    color: red;
+}
+
+.bookmark {
+    color: rgb(84, 83, 83);
+}
+
+::selection {
+    background: transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.show-on-mobile {
+    display: none;
+
+    @media screen and (max-width:767px) {
+        & {
+            display: initial;
+        }
+    }
+}
+
+.hide-on-mobile {
+    display: initial;
+
+    @media screen and (max-width:767px) {
+        & {
+            display: none;
+        }
+    }
+}

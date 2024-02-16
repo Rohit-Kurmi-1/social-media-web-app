@@ -1,0 +1,80 @@
+@import '../vars/color.scss';
+
+#setting {
+    border-left: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+    padding: 0 !important;
+
+    .setting-options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        .option {
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all ease 0.3s;
+
+            &.logout {
+                .icon-container {
+                    color: $white;
+                    background: rgb(209, 54, 54);
+                    display: grid;
+                    place-content: center;
+                    transition: all ease 0.3s;
+                }
+
+                &:hover {
+                    background: rgba(45, 143, 255, 0.245);
+
+                    .icon-container {
+                        background: rgb(186, 28, 28);
+                    }
+                }
+            }
+
+            .icon-container {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: $white;
+                display: grid;
+                place-content: center;
+                transition: all ease 0.3s;
+            }
+
+            &:hover {
+                background: rgba(45, 143, 255, 0.245);
+
+                .icon-container {
+                    background: $extra-light-gray;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+#deactivateAccount {
+    .delete-btn {
+        display: grid;
+        place-content: center;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+            background: rgba(221, 48, 48, 0.1);
+            color: red;
+        }
+    }
+}
